@@ -33,7 +33,8 @@
 #
 #        menu-t
 #
-MENU_HELP_DIR="$HOME/bin/menu/help"
+MENU_DIR="$HOME/bin/local-menu"
+MENU_HELP_DIR="$MENU_DIR/help"
 DIR_NAMES_TMP_FILE="directories.txt.tmp"
 DIR_NAMES_TMP_PATH=/tmp/$DIR_NAMES_TMP_FILE
 listdirs(){ set -- */; printf "%s\n" "${@%/}"; }
