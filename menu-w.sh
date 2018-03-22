@@ -30,6 +30,9 @@ echo " " >> "$MENU_INDEX_README_PATH"
 echo "## Additional Resources" >> "$MENU_INDEX_README_PATH"
 echo " " >> "$MENU_INDEX_README_PATH"
 echo "* [ACElab.ca](https://acelab.ca/)" >> "$MENU_INDEX_README_PATH"
+# images not supported?
+#echo " " >> "$MENU_INDEX_README_PATH"
+#echo "![logo-mcin-cnim-250x52.png](imgs/logo-mcin-cnim-250x52.png)" >> "$MENU_INDEX_README_PATH"
 echo " " >> "$MENU_INDEX_README_PATH"
 cd $MENU_DIR
 firefox --new-window $MENU_DIR/index/index.html &&
