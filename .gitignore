@@ -1,1 +1,8 @@
+# directories
+
 help/*
+
+# temp files
+
+.Rhistory
+
