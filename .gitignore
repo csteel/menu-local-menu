@@ -1,8 +1,16 @@
 # directories
 
+## generated files
+#
+# This file is generated everytime the menu command(s) are run.
+
+index/README.md
+
+## help is another repository
+
 help/*
 
-# temp files
+# temporary files
 
 .Rhistory
 
