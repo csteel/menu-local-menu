@@ -6,40 +6,47 @@ scripts and related resources for local workstation menu system
 
 * https://github.com/csteel/menu-local-help cloned to menu subdirectory (~/bin/local-menu/help) after installation of **menu-local-menu**
 
-### Users
-
-#### firefox (for webgui menu)
+become root
 
 ```shell
+sudo su -
+```
 
+apt update then install what you need
+
+```
+apt update
+```
+
+## firefox (for webgui menu)
+
+```shell
+apt install firefox
 ```
 
 #### git
 
 ```shell
-apt update
 apt install git
 ```
 
 #### myrepos
 
 ```shell
-apt update
 apt install myrepos
 ```
 
 #### pandoc
 
 ```shell
-apt update
 apt install pandoc
 ```
 
-## Installation (manual)
+## local-menu manual installation
 
-### manual installation
+### Ensure '~/bin' is in your path
 
-#### Ensure for path
+This is usally done in `~/.profile` or `~/.bashrc` and looks like this in a default Ubuntu 16.04 `~/.profile` desktop system:
 
 ```shell
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
@@ -47,24 +54,23 @@ PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 ## Clone repositories
 
-### Clone menu system
+### Clone the menu system
 
 ```shell
 cd ~/bin
 git clone git@github.com:csteel/menu-local-menu.git local-menu
 ```
 
-### Clone (local) help files
+### Clone your default help files
 
 ```shell
 cd local-menu
 git clone git@github.com:csteel/menu-local-help.git help
 ```
 
-### Ensure for (relative) sym link to menu script(s)
+### Ensure for (relative) sym links to menu script(s) in ~/bin
 
 ```shell
-mkdir ~/bin
 cd ~/bin
 ln -sf local-menu/menu.sh menu
 ln -sf local-menu/menu-t.sh menu-t
@@ -73,15 +79,15 @@ ln -sf local-menu/menu-w.sh menu-w
 
 ## Testing
 
-### Default menu
+### Web menu
 
-type "menu" in a terminal
+By default the web menu is displayed. You can test by running "menu" in a terminal session
 
 ```shell
 menu
 ```
 
-This should launch a new firefox instance and display an index of local-help. By default is displays a link to the **about** README.md that is converted to html.
+This should launch a new firefox instance and display an index of local-help. By default this displays a link to the **about** README.md which is in turn converted to html using js.
 
 ### Terminal menu
 

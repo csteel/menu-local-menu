@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#
 # adapted from
 #
 #    http://tldp.org/LDP/abs/html/testbranch.html#CASECMD
@@ -8,26 +8,6 @@
 # license
 #
 #    GNU Free Documentation License
-#
-# Requirements:
-#
-#    items.txt
-#
-#    A text file called menuitems.txt should be place in the same directory as this file.
-#    Place a single menu description on each line.
-#
-#    For example:
-#
-#      about
-#      contributing
-#      some_other_item
-#
-#    PATH
-#
-#    The PATH env should include ~/bin. For Ubuntu that would be in ~/.bashrc, for
-#    others perhaps ~/.profile
-#
-# Usage:
 #
 #    Start a terminal session and enter:
 #
